@@ -1,21 +1,32 @@
-body{
-    background-color: #F6F6F6;
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap");
+
+body {
+  background-color: #f6f6f6;
+  scroll-behavior: smooth;
 }
-.navbar{
-    min-height: 100px;
-    height: auto;
-    background-color: #A47B58;
+
+.text-inria-sans {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
-.container{
-    position: relative;
-    padding: 0;
+
+.navbar {
+  min-height: 100px;
+  height: auto;
+  background-color: #a47b58;
 }
-.container img{
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-    filter: brightness(80%);
+.container {
+  position: relative;
+  padding: 0;
+}
+.container img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  filter: brightness(80%);
 }
 .overlay {
   position: absolute;
@@ -27,24 +38,29 @@ body{
   justify-content: start;
   align-items: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3); /* Add the desired background color for the overlay */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Add the desired background color for the overlay */
 }
-.order-btn{
-    background-color: #FFCB74;
-    border-radius: 4px;
-    width: 180px;
-    height: 50px;
+.order-btn {
+  background-color: #ffcb74;
+  border-radius: 4px;
+  width: 180px;
+  height: 50px;
 }
-.order-btn:hover{
-    background-color: #F6F6F6;
-    color: black;
+.order-btn:hover {
+  background-color: #f6f6f6;
+  color: black;
 }
 .overlay-content {
   text-align: left;
 }
-.card{
-    background: white;
-    border: none;
+.card {
+  background: white;
+  border: none;
 }
 
 .number-input {
@@ -69,7 +85,7 @@ body{
   height: 40px;
   border-radius: 25%;
   border: none;
-  background-color: #FFCB74;
+  background-color: #ffcb74;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -79,18 +95,20 @@ body{
 .number-input button:hover {
   color: #666;
 }
-.cake{
-  height: 250px; object-fit: cover; padding: 10px;
+.cake {
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
   border-radius: 16px;
 }
-#atc{
-    background-color: #FFCB74;
-    border: none;
-    color: black;
+#atc {
+  background-color: #ffcb74;
+  border: none;
+  color: black;
 }
-#atc:hover{
-    color: #F6F6F6;
-    background-color: #f3b241;
+#atc:hover {
+  color: #f6f6f6;
+  background-color: #f3b241;
 }
 
 .input-fit-content {
@@ -102,19 +120,19 @@ body{
   border-radius: 6px;
   max-width: 100%;
 }
-.clicked{
+.clicked {
   border: 1.5px solid #f3b241;
 }
-#radioButton{
-  border: 2px solid #FFCB74;
+#radioButton {
+  border: 2px solid #ffcb74;
 }
-.checkout{
+.checkout {
   min-height: 90vh;
 }
-.this{
+.this {
   margin: 0 60px;
 }
-.user{
+.user {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

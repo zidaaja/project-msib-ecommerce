@@ -19,7 +19,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container px-3">
-        <a class="navbar-brand text fw-bold" href="#">Bread & Co.</a>
+        <a class="navbar-brand text fs-3 fw-semibold" href="#">Bread & Co.</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,28 +34,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-5 fs-5">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link fs-4 fw-normal" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link fs-4 fw-bold" href="#product">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+              <a class="nav-link fs-4 fw-normal" href="login.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pb-1" href="checkout.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="29"
-                  fill="currentColor"
-                  class="bi bi-cart"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                  />
-                </svg>
+                <img
+                  src="./asset/shopping-cart.png"
+                  alt="shop"
+                  style="width: 25px; height: 25px"
+                />
               </a>
             </li>
           </ul>
@@ -65,58 +61,84 @@
 
     <!-- Content -->
     <div class="container d-flex-column">
-      <div class="py-3">
-        <h1 class="text-center">Browse Our Product</h1>
+      <div class="py-5">
+        <h1 class="text-center text-inria-sans">Browse Our Product</h1>
         <div class="w-100 mx-auto">
           <div class="input-group mb-3">
-            <span class="input-group-text"
-              ><img
+            <button
+              class="input-group-text ps-4 btn-disabled"
+              style="background-color: #d9d9d9"
+              disabled
+            >
+              <img
                 src="./asset/magnifying-glass.svg"
                 alt="search"
-                style="width: 20px; height: 20px"
-            /></span>
+                style="width: 40px; height: 40px"
+              />
+            </button>
             <input
               type="text"
-              class="form-control form-control-lg"
+              class="form-control form-control-lg py-4"
               id="floatingInputGroup1"
               placeholder="Chocolate Tiramisu"
+              style="background-color: #d9d9d9; border-inline: none"
             />
-            <span class="input-group-text"
-              ><img
-                src="asset/arrow-right.png"
-                alt="find"
-                style="width: 20px; height: 13px"
-            /></span>
+            <button class="input-group-text" style="background-color: #d9d9d9">
+              <div class="p-3 bg-light rounded">
+                <img
+                  src="asset/arrow-right.png"
+                  alt="find"
+                  style="width: 25px; height: 15px"
+                />
+              </div>
+            </button>
           </div>
           <div class="mb-3">
-            <button type="button" class="btn btn-secondary px-4 rounded-pill">
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
               Cakes
             </button>
-            <button type="button" class="btn btn-secondary px-4 rounded-pill">
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
               Bread
             </button>
-            <button type="button" class="btn btn-secondary px-4 rounded-pill">
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
               Smoothies
             </button>
-            <button type="button" class="btn btn-secondary px-4 rounded-pill">
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
               Cookies
             </button>
           </div>
           <div class="mb-3">
-           <!-- ----------------------------- cakes ---------------------------  -->
+            <!-- ----------------------------- cakes ---------------------------  -->
             <h1 class="text-center">Cakes</h1>
             <div class="row gap-3 gap-lg-0 m-2 gy-4">
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 1 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/chocolatte-tiramisu.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Chocolate Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -141,17 +163,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 1 ---------------------------- -->
+              <!-- ----------------------- cakes 2 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/grapes-tiramisu.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Grapes Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -176,17 +200,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 2 ---------------------------- -->
+              <!-- ----------------------- cakes 3 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/bisquit-tiramisu.jpg"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Bisquit Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -211,17 +237,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 3 ---------------------------- -->
+              <!-- ----------------------- cakes 4 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/strawberry-cheese-cake.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Strawberry Cheesecake</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -246,17 +274,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 4 ---------------------------- -->
+              <!-- ----------------------- cakes 5 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/sus-cake.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Sus Cake</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -281,17 +311,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- cakes 5 ---------------------------- -->
+              <!-- ----------------------- cakes 6 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/strawberry-roll.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Strawberry Roll</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -316,23 +348,25 @@
                   </div>
                 </div>
               </div>
+              <!-- ----------------------- cakes 6 ---------------------------- -->
             </div>
           </div>
-        <!-- ----------------------------- Coffeess ---------------------------  -->
+          <!-- ----------------------------- Coffeess ---------------------------  -->
           <div class="my-4">
             <h1 class="text-center">Coffees</h1>
             <div class="row gap-3 gap-lg-0 m-2 gy-4">
-              <div class="col-md-3">
+              <!-- ----------------------- coffee 1 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/chocoa-coffee.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Chocoa Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -357,17 +391,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- coffee 1 ---------------------------- -->
+              <!-- ----------------------- coffee 2 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/black-coffee.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Black Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -392,17 +428,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- coffee 2 ---------------------------- -->
+              <!-- ----------------------- coffee 3 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/cappucino-cream.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Cappucino Cream</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -427,17 +465,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- coffee 3 ---------------------------- -->
+              <!-- ----------------------- coffee 4 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/black-coffee.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Black Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -462,93 +502,25 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- ----------------------- coffee 4 ---------------------------- -->
             </div>
           </div>
           <!-- ----------------------------- Breads ---------------------------  -->
           <div class="my-4">
             <h1 class="text-center">Breads</h1>
             <div class="row gap-3 gap-lg-0 m-2 gy-4">
-              <div class="col-md-3">
+              <!-- ----------------------- Bread 1 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/baguets.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Baguets</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -573,17 +545,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- Bread 1 ---------------------------- -->
+              <!-- ----------------------- Bread 2 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/chocolava.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Chocolava</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -608,17 +582,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- Bread 2 ---------------------------- -->
+              <!-- ----------------------- Bread 3 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/cinamon-roll.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Cinamon Roll</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -643,128 +619,25 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- ----------------------- Bread 3 ---------------------------- -->
             </div>
           </div>
           <!-- ----------------------------- Somoothies ---------------------------  -->
           <div class="my-4">
             <h1 class="text-center">Smoothies</h1>
             <div class="row gap-3 gap-lg-0 m-2 gy-4">
-              <div class="col-md-3">
+              <!-- ----------------------- Smoothie 1 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/strawberry-kiwi.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Strawberry Kiwi</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -789,17 +662,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- Smoothie 1 ---------------------------- -->
+              <!-- ----------------------- Smoothie 2 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/berry-smoothie.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Berry Smoothie</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -824,17 +699,19 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <!-- ----------------------- Smoothie 2 ---------------------------- -->
+              <!-- ----------------------- Smoothie 3 ---------------------------- -->
+              <div class="col-lg-3">
                 <div class="card shadow">
                   <img
-                    src="/asset/cake-1.jpg"
+                    src="/asset/strawberry smoothie.png"
                     class="card-img-top cake"
                     style="height: 300px; object-fit: cover; padding: 10px"
                     alt="Cake 1"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
+                    <h5 class="card-title">Strawberry Smothie</h5>
+                    <p class="card-text">Price: $5.00</p>
                     <div class="rating mt-3">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -859,111 +736,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card shadow">
-                  <img
-                    src="/asset/cake-1.jpg"
-                    class="card-img-top cake"
-                    style="height: 300px; object-fit: cover; padding: 10px"
-                    alt="Cake 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cheese Muffin</h5>
-                    <p class="card-text">Price: $10.99</p>
-                    <div class="rating mt-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <div class="number-input">
-                      <button class="minus-btn" type="button">-</button>
-                      <input type="text" value="0" readonly />
-                      <button class="plus-btn" type="button">+</button>
-                    </div>
-                    <div class="d-grid mt-3">
-                      <button
-                        class="btn btn-primary py-2"
-                        id="atc"
-                        type="button"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- ----------------------- Smoothie 3 ---------------------------- -->
             </div>
           </div>
         </div>
@@ -977,7 +750,7 @@
       <div class="container p-4 pb-0">
         <section>
           <div class="row">
-            <div class="col-md-3 col-lg-3 col-xl-5 mx-auto mt-3">
+            <div class="col-lg-3 col-lg-3 col-xl-5 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Bread & Co.</h6>
               <p>
                 We Baked The Best Cake in The World. Experience the Flavors of
@@ -985,16 +758,16 @@
                 Bread, Fresh From Oven
               </p>
             </div>
-            <div class="col-md-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="col-lg-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
               <p>
-                <i class="fas fa-home mr-3"></i>Banjarmasin, Kalimantan Selatan
+                <i class="fas fa-home me-3"></i>Banjarmasin, Kalimantan Selatan
               </p>
-              <p><i class="fas fa-envelope mr-3"></i>Breadnco@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> 081 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> 081 234 567 89</p>
+              <p><i class="fas fa-envelope me-3"></i>Breadnco@gmail.com</p>
+              <p><i class="fas fa-phone me-3"></i> 081 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> 081 234 567 89</p>
             </div>
           </div>
         </section>
