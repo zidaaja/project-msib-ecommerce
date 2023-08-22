@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- added a comment here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Online | Bread & Co.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container px-3">
+        <a class="navbar-brand text fs-3 fw-semibold" href="#">Bread & Co.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-5 fs-5">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="login.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-1" href="checkout.html">
+                <img
+                  src="./asset/shopping-cart.png"
+                  alt="shop"
+                  style="width: 25px; height: 25px"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container d-flex-column">
+      <div class="py-5">
+        <h1 class="text-center text-inria-sans">Browse Our Product</h1>
+        <div class="w-100 mx-auto">
+          <div class="input-group mb-3">
+            <button
+              class="input-group-text ps-4 btn-disabled"
+              style="background-color: #d9d9d9"
+              disabled
+            >
+              <img
+                src="./asset/magnifying-glass.svg"
+                alt="search"
+                style="width: 40px; height: 40px"
+              />
+            </button>
+            <input
+              type="text"
+              class="form-control form-control-lg py-4"
+              id="floatingInputGroup1"
+              placeholder="Chocolate Tiramisu"
+              style="background-color: #d9d9d9; border-inline: none"
+            />
+            <button class="input-group-text" style="background-color: #d9d9d9">
+              <div class="p-3 bg-light rounded">
+                <img
+                  src="asset/arrow-right.png"
+                  alt="find"
+                  style="width: 25px; height: 15px"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="mb-3">
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
+              Cakes
+            </button>
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
+              Bread
+            </button>
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
+              Smoothies
+            </button>
+            <button
+              type="button"
+              class="btn px-4 rounded-pill fw-bold"
+              style="background-color: #d9d9d9"
+            >
+              Cookies
+            </button>
+          </div>
+          <div class="mb-3">
+            <!-- ----------------------------- cakes ---------------------------  -->
+            <h1 class="text-center">Cakes</h1>
+            <div class="row gap-3 gap-lg-0 m-2 gy-4">
+              <!-- ----------------------- cakes 1 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/chocolatte-tiramisu.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolate Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 1 ---------------------------- -->
+              <!-- ----------------------- cakes 2 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/grapes-tiramisu.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Grapes Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 2 ---------------------------- -->
+              <!-- ----------------------- cakes 3 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/bisquit-tiramisu.jpg"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bisquit Tiramisu</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 3 ---------------------------- -->
+              <!-- ----------------------- cakes 4 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/strawberry-cheese-cake.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Cheesecake</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 4 ---------------------------- -->
+              <!-- ----------------------- cakes 5 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/sus-cake.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Sus Cake</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 5 ---------------------------- -->
+              <!-- ----------------------- cakes 6 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/strawberry-roll.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Roll</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- cakes 6 ---------------------------- -->
+            </div>
+          </div>
+          <!-- ----------------------------- Coffeess ---------------------------  -->
+          <div class="my-4">
+            <h1 class="text-center">Coffees</h1>
+            <div class="row gap-3 gap-lg-0 m-2 gy-4">
+              <!-- ----------------------- coffee 1 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/chocoa-coffee.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chocoa Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- coffee 1 ---------------------------- -->
+              <!-- ----------------------- coffee 2 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/black-coffee.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Black Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- coffee 2 ---------------------------- -->
+              <!-- ----------------------- coffee 3 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/cappucino-cream.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cappucino Cream</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- coffee 3 ---------------------------- -->
+              <!-- ----------------------- coffee 4 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/black-coffee.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Black Coffee</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- coffee 4 ---------------------------- -->
+            </div>
+          </div>
+          <!-- ----------------------------- Breads ---------------------------  -->
+          <div class="my-4">
+            <h1 class="text-center">Breads</h1>
+            <div class="row gap-3 gap-lg-0 m-2 gy-4">
+              <!-- ----------------------- Bread 1 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/baguets.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Baguets</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Bread 1 ---------------------------- -->
+              <!-- ----------------------- Bread 2 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/chocolava.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolava</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Bread 2 ---------------------------- -->
+              <!-- ----------------------- Bread 3 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/cinamon-roll.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cinamon Roll</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Bread 3 ---------------------------- -->
+            </div>
+          </div>
+          <!-- ----------------------------- Somoothies ---------------------------  -->
+          <div class="my-4">
+            <h1 class="text-center">Smoothies</h1>
+            <div class="row gap-3 gap-lg-0 m-2 gy-4">
+              <!-- ----------------------- Smoothie 1 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/strawberry-kiwi.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Kiwi</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Smoothie 1 ---------------------------- -->
+              <!-- ----------------------- Smoothie 2 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/berry-smoothie.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Berry Smoothie</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Smoothie 2 ---------------------------- -->
+              <!-- ----------------------- Smoothie 3 ---------------------------- -->
+              <div class="col-lg-3">
+                <div class="card shadow">
+                  <img
+                    src="/asset/strawberry smoothie.png"
+                    class="card-img-top cake"
+                    style="height: 300px; object-fit: cover; padding: 10px"
+                    alt="Cake 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Smothie</h5>
+                    <p class="card-text">Price: $5.00</p>
+                    <div class="rating mt-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="number-input">
+                      <button class="minus-btn" type="button">-</button>
+                      <input type="text" value="0" readonly />
+                      <button class="plus-btn" type="button">+</button>
+                    </div>
+                    <div class="d-grid mt-3">
+                      <button
+                        class="btn btn-primary py-2"
+                        id="atc"
+                        type="button"
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ----------------------- Smoothie 3 ---------------------------- -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #a47b58"
+    >
+      <div class="container p-4 pb-0">
+        <section>
+          <div class="row">
+            <div class="col-lg-3 col-lg-3 col-xl-5 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Bread & Co.</h6>
+              <p>
+                We Baked The Best Cake in The World. Experience the Flavors of
+                Handcrafted Breads. Bringing Joy and Deliciousness to Your Daily
+                Bread, Fresh From Oven
+              </p>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home me-3"></i>Banjarmasin, Kalimantan Selatan
+              </p>
+              <p><i class="fas fa-envelope me-3"></i>Breadnco@gmail.com</p>
+              <p><i class="fas fa-phone me-3"></i> 081 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> 081 234 567 89</p>
+            </div>
+          </div>
+        </section>
+        <hr class="my-3" />
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="fs-5">© 2023 Copyright Bread & Co.</div>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const minusBtns = document.querySelectorAll(".minus-btn");
+        const plusBtns = document.querySelectorAll(".plus-btn");
+
+        minusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.nextElementSibling;
+            let value = parseInt(input.value);
+
+            if (value > 0) {
+              value--;
+              input.value = value;
+            }
+          });
+        });
+
+        plusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.previousElementSibling;
+            let value = parseInt(input.value);
+
+            if (value < 10) {
+              value++;
+              input.value = value;
+            }
+          });
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-icons@1.7.2/font/bootstrap-icons.js"></script>
+  </body>
+</html>
