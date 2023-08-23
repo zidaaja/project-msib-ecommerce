@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- added a comment here -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online | Bread & Co.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script type="module" src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container px-3">
+      <a class="navbar-brand text fs-3 fw-semibold" href="#">Bread & Co.</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-5 fs-5">
+          <li class="nav-item">
+            <a class="nav-link fs-4 fw-normal" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 fw-normal" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 fw-bold" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pb-1" href="checkout.html">
+              <img
+                src="./asset/shopping-cart.png"
+                alt="shop"
+                style="width: 25px; height: 25px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="h-auto py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up-right">
+                <h2 class="display-4">About Us</h2>
+                <p class="lead">At Bread & Co, we are passionate about baking the finest artisanal breads that delight your taste buds and warm your heart. Our journey began in a small kitchen, where our founder's love for baking turned into a full-fledged bakery business.</p>
+                <p>We believe that every loaf of bread tells a story - the story of handpicked ingredients, traditional baking methods, and the dedication of our skilled bakers. From classic sourdough to innovative flavored loaves, each creation is a masterpiece.</p>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up-left">
+                <img src="asset/asset2.png" alt="About Us" class="img-fluid rounded" style="width: 100%; height:100%">
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #a47b58"
+>
+  <div class="container p-4 pb-0">
+    <section>
+      <div class="row">
+        <div class="col-lg-3 col-lg-3 col-xl-5 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Bread & Co.</h6>
+          <p>
+            We Baked The Best Cake in The World. Experience the Flavors of
+            Handcrafted Breads. Bringing Joy and Deliciousness to Your Daily
+            Bread, Fresh From Oven
+          </p>
+        </div>
+        <div class="col-lg-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
+        <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
+        <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-home me-3 pb-2"></i>
+            <p>Banjarmasin, Kalimantan Selatan</p>
+          </div>
+          <p><i class="fas fa-envelope me-3"></i>Breadnco@gmail.com</p>
+          <p><i class="fas fa-phone me-3"></i> 081 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> 081 234 567 89</p>
+        </div>
+      </div>
+    </section>
+    <hr class="my-3" />
+    <section class="p-3 pt-0">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <div class="fs-5">© 2023 Copyright Bread & Co.</div>
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+  </div>  
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const minusBtns = document.querySelectorAll(".minus-btn");
+      const plusBtns = document.querySelectorAll(".plus-btn");
+  
+      minusBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          const input = btn.nextElementSibling;
+          let value = parseInt(input.value);
+  
+          if (value > 0) {
+            value--;
+            input.value = value;
+          }
+        });
+      });
+  
+      plusBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          const input = btn.previousElementSibling;
+          let value = parseInt(input.value);
+  
+          if (value < 10) {
+            value++;
+            input.value = value;
+          }
+        });
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-icons@1.7.2/font/bootstrap-icons.js"></script>
+</body>
+
+</html>
