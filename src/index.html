@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toko Online | Bread & Co.</title>
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script type="module" src="./js/main.js"></script>
 
@@ -65,7 +69,7 @@
     </div>
   </div>
 
-  <div class="container mt-5 h-40 d-flex " id="#">
+  <div class="container mt-5 h-40 d-flex " id="#" data-aos="fade-up" data-aos-offset="300">
     <img style="width: 50%; height: 50%" src="asset/asset1.png" />
     <div class="container mt-5">
       <div style="width: 100%; height: 72%">
@@ -81,7 +85,7 @@
     </div>
   </div>
 
-  <div class="container -margin-right pl-5">
+  <div class="container -margin-right pl-5" data-aos="fade-left" data-aos-duration="1000">
     <div class="-margin-right" style="width: 100%; height: 100%; background: #D9D9D9; border-radius: 6px">
       <div class="container py-5 pl-5 h-50 d-flex w-75" id="#">
         <div class="container pl-5">
@@ -99,7 +103,7 @@
     <h1 class="my-5 this">Today's Cake</h1>
     <div class="row gap-3 gap-lg-0 m-2 m-lg-5">
       <div class="col-md-4">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-1.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
           <div class="card-body">
             <h5 class="card-title">Cheese Muffin</h5>
@@ -123,7 +127,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-2.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 2">
           <div class="card-body">
             <h5 class="card-title">Chocolate Tiramisu</h5>
@@ -147,7 +151,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-3.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 3">
           <div class="card-body">
             <h5 class="card-title">Strawbery Choco Cake</h5>
@@ -171,7 +175,7 @@
         </div>
       </div>
       <div class="col-md-4 mt-3">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-4.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
           <div class="card-body">
             <h5 class="card-title">Matcha Creepes</h5>
@@ -195,7 +199,7 @@
         </div>
       </div>
       <div class="col-md-4 mt-3">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-5.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
           <div class="card-body">
             <h5 class="card-title">Choco Tart</h5>
@@ -219,7 +223,7 @@
         </div>
       </div>
       <div class="col-md-4 mt-3">
-        <div class="card shadow">
+        <div class="card shadow" data-aos="flip-right">
           <img src="/asset/cake-6.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
           <div class="card-body">
             <h5 class="card-title">Black Forrest Grapes</h5>
@@ -245,22 +249,12 @@
     </div>
   </div>
 
-  <div class="subs-container" style="background-color: #D9D9D9;">
+  <div class="subs-container" style="background-color: #D9D9D9;" data-aos="fade-right" data-aos-duration="1000">
     <h2 class="subscribe">Subscribe to Our Newsletter to Get <br> Special Promotion Everyday!</h2>
     <input type="text" name="email" id="" class="subs-input" placeholder="example@gmail.com">
     <button class="subs-button">→</button>
   </div>
 
-  <!-- <div class="container -margin-left">
-    <div style="width: 100%; height: 100%; background: #D9D9D9; border-radius: 6px">
-      <div class="container mt-5 pt-5 h-40 d-flex " id="#">
-        <div class="container mt-5">
-          <div style="width: 100%; height: 100%; color: black; font-size: 56px; font-family: Inria Sans; font-weight: 300; word-wrap: break-word">Subscribe to Our Newsletter to Get Special Promotion Everyday!</div>
-        </div>
-        
-      </div>
-    </div>
-  </div> -->
 
   <footer
   class="text-center text-lg-start text-white"
@@ -324,7 +318,13 @@
   </div>
 </footer>
   </div>  
-  
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const minusBtns = document.querySelectorAll(".minus-btn");
