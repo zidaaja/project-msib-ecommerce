@@ -142,6 +142,7 @@ body {
   max-width: 80px;
 }
 
+<<<<<<< HEAD:src/scss/styles.scss
 .-margin-right {
   margin-right: +10px;
 }
@@ -151,16 +152,35 @@ body {
 }
 
 .subscribe {
+=======
+.-margin-right{
+  margin-right:+10px;
+}
+
+.-margin-left{
+  margin-left:+5px;
+}
+
+.subscribe{
+>>>>>>> 4b0521b573f559d7ca302a8fccb7cecc092216b8:index.css
   padding-left: 70px;
   padding-top: 25px;
   font-weight: 400;
 }
+<<<<<<< HEAD:src/scss/styles.scss
 .subs-container {
+=======
+.subs-container{
+>>>>>>> 4b0521b573f559d7ca302a8fccb7cecc092216b8:index.css
   height: 40vh;
   width: 80vw;
   margin-bottom: 40px;
 }
+<<<<<<< HEAD:src/scss/styles.scss
 .subs-input {
+=======
+.subs-input{
+>>>>>>> 4b0521b573f559d7ca302a8fccb7cecc092216b8:index.css
   padding: 15px 10px;
   margin-top: 10px;
   margin-left: 70px;
@@ -168,10 +188,17 @@ body {
   border-radius: 6px;
   border: none;
 }
+<<<<<<< HEAD:src/scss/styles.scss
 .subs-input:focus {
   border: none;
 }
 .subs-button {
+=======
+.subs-input:focus{
+  border: none;
+}
+.subs-button{
+>>>>>>> 4b0521b573f559d7ca302a8fccb7cecc092216b8:index.css
   font-size: 20px;
   position: absolute;
   margin-left: -50px;

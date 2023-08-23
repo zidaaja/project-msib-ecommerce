@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "project-msib-ecommerce",
   "version": "1.0.0",
   "description": "",
@@ -19,4 +20,24 @@
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5"
   }
+=======
+  "name": "tugas2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidaaja/project-msib-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidaaja/project-msib-ecommerce/issues"
+  },
+  "homepage": "https://github.com/zidaaja/project-msib-ecommerce#readme"
+>>>>>>> 4b0521b573f559d7ca302a8fccb7cecc092216b8
 }
