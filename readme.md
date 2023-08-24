@@ -3,12 +3,12 @@
 Ini adalah dokumen README untuk tugas MSIB yaitu membuat website statis dengan tema E-Commerce. Kami membuat E-Commerce yang bernama Bread and Co, yaitu sebuah platform daring yang menyediakan berbagai jenis roti, kue, dsb.
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://msib-ecommerce.netlify.app/468x300?text=App+Screenshot+Here)
 
 
 ## Demo
 
-Insert gif or link to demo
+https://msib-ecommerce.netlify.app/
 
 
 ## Installation
