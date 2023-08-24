@@ -1,9 +1,10 @@
 # Project E-Commerce Bread n Co
 
 Ini adalah dokumen README untuk tugas MSIB yaitu membuat website statis dengan tema E-Commerce. Kami membuat E-Commerce yang bernama Bread and Co, yaitu sebuah platform daring yang menyediakan berbagai jenis roti, kue, dsb.
+
 ## Screenshots
 
-![App Screenshot](https://msib-ecommerce.netlify.app/468x300?text=App+Screenshot+Here)
+<img width="907" alt="image" src="https://github.com/zidaaja/project-msib-ecommerce/assets/102134676/a13db7b6-3b61-4504-9d45-5a34d0e88176">
 
 
 ## Demo
