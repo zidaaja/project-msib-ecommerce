@@ -86,28 +86,15 @@
                 />
               </div>
               <div class="col mt-1 me-2">
-                <div class="text-inria-sans fs-3">Capuccino</div>
+                <div class="text-inria-sans fs-3 pt-3">Capuccino</div>
                 <div class="text-inria-sans text-black-50 fs-6">
                   Lorem ipsum dolor
                 </div>
               </div>
-              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5">
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  -
-                </button>
-                <span class="fs-6 p-1">1</span>
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  +
-                </button>
-
+              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5 number-input">
+                <button class="minus-btn mx-2 btn bg-warning" type="button">-</button>
+                  <input class="fs-6 p-1" type="text" value="1" readonly />
+                <button class="plus-btn mx-2 btn bg-warning" type="button">+</button>
                 <button
                   class="mx-2 border border-0 bg-transparent d-inline-block"
                   type="button"
@@ -132,28 +119,15 @@
                 />
               </div>
               <div class="col mt-1 me-2">
-                <div class="text-inria-sans fs-3">Capuccino</div>
+                <div class="text-inria-sans fs-3 pt-3">Capuccino</div>
                 <div class="text-inria-sans text-black-50 fs-6">
                   Lorem ipsum dolor
                 </div>
               </div>
-              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5">
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  -
-                </button>
-                <span class="fs-6 p-1">1</span>
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  +
-                </button>
-
+              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5 number-input">
+                <button class="minus-btn mx-2 btn bg-warning" type="button">-</button>
+                  <input class="fs-6 p-1" type="text" value="1" readonly />
+                <button class="plus-btn mx-2 btn bg-warning" type="button">+</button>
                 <button
                   class="mx-2 border border-0 bg-transparent d-inline-block"
                   type="button"
@@ -178,28 +152,15 @@
                 />
               </div>
               <div class="col mt-1 me-2">
-                <div class="text-inria-sans fs-3">Capuccino</div>
+                <div class="text-inria-sans fs-3 pt-3">Capuccino</div>
                 <div class="text-inria-sans text-black-50 fs-6">
                   Lorem ipsum dolor
                 </div>
               </div>
-              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5">
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  -
-                </button>
-                <span class="fs-6 p-1">1</span>
-                <button
-                  class="mx-2 btn bg-warning"
-                  type="button"
-                  style="width: 40px; height: 40px"
-                >
-                  +
-                </button>
-
+              <div class="col-lg-4 my-auto d-flex justify-content-end mr-5 number-input">
+                <button class="minus-btn mx-2 btn bg-warning" type="button">-</button>
+                  <input class="fs-6 p-1" type="text" value="1" readonly />
+                <button class="plus-btn mx-2 btn bg-warning" type="button">+</button>
                 <button
                   class="mx-2 border border-0 bg-transparent d-inline-block"
                   type="button"
@@ -384,6 +345,35 @@
     </footer>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const minusBtns = document.querySelectorAll(".minus-btn");
+        const plusBtns = document.querySelectorAll(".plus-btn");
+
+        minusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.nextElementSibling;
+            let value = parseInt(input.value);
+
+            if (value > 0) {
+              value--;
+              input.value = value;
+            }
+          });
+        });
+
+        plusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.previousElementSibling;
+            let value = parseInt(input.value);
+
+            if (value < 10) {
+              value++;
+              input.value = value;
+            }
+          });
+        });
+      });
+      
       document
         .getElementById("orderButton")
         .addEventListener("click", function () {
@@ -401,6 +391,7 @@
       const checkButton = document.getElementById("checkButton");
       const cakeCard = document.getElementById("cakeCard");
       const payment = document.getElementById("payment");
+
       radioButton.addEventListener("change", function () {
         if (this.checked) {
           cakeCard.classList.add("clicked");
