@@ -354,7 +354,7 @@
             const input = btn.nextElementSibling;
             let value = parseInt(input.value);
 
-            if (value > 0) {
+            if (value > 1) {
               value--;
               input.value = value;
             }
@@ -366,7 +366,7 @@
             const input = btn.previousElementSibling;
             let value = parseInt(input.value);
 
-            if (value < 10) {
+            if (value < 100) {
               value++;
               input.value = value;
             }
