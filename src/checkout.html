@@ -40,7 +40,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 fw-bold" href="login.html">Login</a>
+              <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pb-1" href="checkout.html">
@@ -55,18 +55,10 @@
         </div>
       </div>
     </nav>
-    <div class="container my-3">
+    <div class="container my-3 p-1">
       <div class="d-flex justify-content-between mb-4">
-        <button
-          type="button"
-          class="btn btn-light rounded-circle shadow-sm py-4"
-          style="width: 100px"
-        >
-          <img
-            src="./asset/arrow-left.png"
-            alt="back"
-            style="width: 60px; height: 35px"
-          />
+        <button type="button" class="btn btn-light rounded-circle shadow-sm px-4">
+          <i class="bi bi-arrow-left" style="font-size: 50px"></i>
         </button>
         <button
           type="button"
@@ -81,11 +73,11 @@
         </button>
       </div>
       <h2 class="fs-2 text-inria-sans">Your cart</h2>
-      <div class="p-4 d-flex flex-wrap justify-content-between">
+      <div class="p-2 d-flex flex-wrap justify-content-between">
         <div class="flex-fill">
-          <div class="card rounded-4 me-3 mb-3">
+          <div class="card rounded-4 mx-2 mb-3">
             <div class="card-body row justify-content-between">
-              <div class="col me-3">
+              <div class="col mx-2">
                 <img
                   src="./asset/cappucino-cream.png"
                   alt=""
@@ -129,9 +121,9 @@
               </div>
             </div>
           </div>
-          <div class="card rounded-4 me-3 mb-3">
+          <div class="card rounded-4 mx-2 mb-3">
             <div class="card-body row justify-content-between">
-              <div class="col me-3">
+              <div class="col mx-2">
                 <img
                   src="./asset/cappucino-cream.png"
                   alt=""
@@ -175,7 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="card rounded-4 me-3 mb-3">
+          <div class="card rounded-4 mx-2 mb-3">
             <div class="card-body row justify-content-between">
               <div class="col me-3">
                 <img
@@ -223,7 +215,7 @@
           </div>
         </div>
         <div class="flex-fill">
-          <div class="card rounded-4 me-3 p-1 mb-3">
+          <div class="card rounded-4 mx-2 p-1 mb-3">
             <div class="card-body d-flex align-items-center">
               <button
                 class="me-3 border border-0 bg-transparent d-inline-block"
@@ -240,20 +232,20 @@
               <div class="text-inria-sans fs-6">Edit</div>
             </div>
           </div>
-          <div class="card rounded-4 me-3 p-1">
+          <div class="card rounded-4 mx-2 p-1">
             <div class="card-body">
               <p class="text-inria-sans fs-4">Payment Method</p>
               <div class="form-check">
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
+                  name="paymentMethod"
+                  id="cashOnDelivery"
                   checked
                 />
                 <label
                   class="form-check-label text-inria-sans fs-6"
-                  for="flexRadioDefault1"
+                  for="cashOnDelivery"
                 >
                   Cash on delivery
                 </label>
@@ -262,12 +254,12 @@
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
+                  name="paymentMethod"
+                  id="goPay"
                 />
                 <label
                   class="form-check-label text-inria-sans fs-6"
-                  for="flexRadioDefault1"
+                  for="goPay"
                 >
                   Gopay
                 </label>
@@ -276,28 +268,25 @@
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
+                  name="paymentMethod"
+                  id="ATM"
                 />
-                <label
-                  class="form-check-label text-inria-sans fs-6"
-                  for="flexRadioDefault1"
-                >
+                <label class="form-check-label text-inria-sans fs-6" for="ATM">
                   ATM
                 </label>
               </div>
-              <p class="text-inria-sans fs-4">Payment Method</p>
+              <p class="text-inria-sans fs-4">Pick Up Option</p>
               <div class="form-check">
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault2"
-                  id="flexRadioDefault1"
+                  name="pickUpOption"
+                  id="pickUp"
                   checked
                 />
                 <label
                   class="form-check-label text-inria-sans fs-6"
-                  for="flexRadioDefault1"
+                  for="pickUp"
                 >
                   Pick Up
                 </label>
@@ -306,12 +295,12 @@
                 <input
                   class="form-check-input"
                   type="radio"
-                  name="flexRadioDefault2"
-                  id="flexRadioDefault1"
+                  name="pickUpOption"
+                  id="delivery"
                 />
                 <label
                   class="form-check-label text-inria-sans fs-6"
-                  for="flexRadioDefault1"
+                  for="delivery"
                 >
                   Delivery
                 </label>
