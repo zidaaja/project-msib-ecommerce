@@ -1,376 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- added a comment here -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Online | Bread & Co.</title>
+  <!-- added a comment here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Online | Bread & Co.</title>
 
-  <!-- aos -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script type="module" src="./js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script type="module" src="./js/main.js"></script>
+  </head>
 
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container px-3">
-      <a class="navbar-brand text fs-3 fw-semibold" href="#">Bread & Co.</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto gap-5 fs-5">
-          <li class="nav-item">
-            <a class="nav-link fs-4 fw-bold" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 fw-normal" href="product.html">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 fw-normal" href="aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pb-1" href="checkout.html">
-              <img
-                src="./asset/shopping-cart.png"
-                alt="shop"
-                style="width: 25px; height: 25px"
-              />
-            </a>
-          </li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container px-3">
+        <a class="navbar-brand text fs-3 fw-semibold" href="#">Bread & Co.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-5 fs-5">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="aboutus.html"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-normal" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-1" href="checkout.html">
+                <img
+                  src="./asset/shopping-cart.png"
+                  alt="shop"
+                  style="width: 25px; height: 25px"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Content -->
-  <div class="container">
-    <div class="container mt-5 text-center p-2" id="home">
-      <img src="/asset/jumbotron.jpg" alt="jumbo" class="img-fluid rounded-2">
-      <div class="overlay rounded-2 bg-transparent shadow">
+    <!-- Content -->
+    <div class="container">
+      <div class="container mt-5 text-center p-2" id="home">
+        <img
+          src="/asset/jumbotron.jpg"
+          alt="jumbo"
+          class="img-fluid rounded-2"
+        />
+        <div class="overlay rounded-2 bg-transparent shadow">
           <div class="overlay-content p-4">
-            <h1 class="overlay-heading font-monospace">Your Daily Dose of Bread</h1>
-            <p class="overlay-description fs-6">We Baked The Best Cake in The World. Experience the Flavors of Handcrafted Breads. <br> Bringing Joy and Deliciousness to Your Daily Bread</p>
-            <a class="shadow-lg" href="product.html"><button type="button" class="btn order-btn mt-5">Order Now</button></a>
+            <h1 class="overlay-heading font-monospace">
+              Your Daily Dose of Bread
+            </h1>
+            <p class="overlay-description fs-6">
+              We Baked The Best Cake in The World. Experience the Flavors of
+              Handcrafted Breads. <br />
+              Bringing Joy and Deliciousness to Your Daily Bread
+            </p>
+            <a class="shadow-lg" href="product.html"
+              ><button type="button" class="btn order-btn mt-5">
+                Order Now
+              </button></a
+            >
           </div>
+        </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="container p-3">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <img class="w-100 h-100" src="asset/asset1.png" />
-      </div>
-      <div class="col-lg-6">
-        <div class="d-flex flex-column justify-content-between">
-          <div class="mb-3">
-            <h1 class="text-inria-sans fw-bold mb-4" style="font-size: 60px;">Your enjoyment is everything.</h1>
-            <p class="fs-3 text-inria-sans fw-light">Hassle free with our delivery service, save your time, enjoy your life, while we take your order at Your door</p>
-          </div>
-          <div class="d-flex justify-content-end align-items-center mt-3 h-100 w-100">
+    <div class="container p-3">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img class="w-100 h-100" src="asset/asset1.png" />
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex flex-column justify-content-between">
+            <div class="mb-3">
+              <h1 class="text-inria-sans fw-bold mb-4" style="font-size: 60px">
+                Your enjoyment is everything.
+              </h1>
+              <p class="fs-3 text-inria-sans fw-light">
+                Hassle free with our delivery service, save your time, enjoy
+                your life, while we take your order at Your door
+              </p>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center mt-3 h-100 w-100"
+            >
               <img class="w-25 h-25 me-3" src="asset/maxim.png" />
               <img class="w-25 h-25" src="asset/gojek.png" />
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-  <div class="container p-4 border-top border-2 border-secondary" data-aos="fade-left" data-aos-duration="1000">
-    <div class="">
-      <div class="container py-5 pl-5 h-50 row w-100 align-items-center" id="#">
-        <div class="col-md-6 container pl-5">
-          <div class="">
-            <h1 class=" text-inria-sans mb-4 fw-bold" style="font-size: 65px;">Customize Your Order</h1>
-            <p class="fs-3 fw-light">Giving You Chance To Eat What You Wanted The Most, Because Your Satisfaction Is Our Goals</p>
+    <div
+      class="container p-4 border-top border-2 border-secondary"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
+      <div class="">
+        <div
+          class="container py-5 pl-5 h-50 row w-100 align-items-center"
+          id="#"
+        >
+          <div class="col-md-6 container pl-5">
+            <div class="">
+              <h1 class="text-inria-sans mb-4 fw-bold" style="font-size: 65px">
+                Customize Your Order
+              </h1>
+              <p class="fs-3 fw-light">
+                Giving You Chance To Eat What You Wanted The Most, Because Your
+                Satisfaction Is Our Goals
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="h-100" src="asset/asset2.png" />
           </div>
         </div>
-        <div class="col-md-6">
-          <img class="h-100" src="asset/asset2.png" />
-        </div>
-
       </div>
     </div>
-  </div>
-  
-  <div class="container min-vh-100" id="product">
-    <h1 class="my-5 this">Today's Cake</h1>
-    <div class="row gap-3 gap-lg-0 m-2 m-lg-5">
-      <div class="col-md-4">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-1.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
-          <div class="card-body">
-            <h5 class="card-title">Cheese Muffin</h5>
-            <p class="card-text">Price: $10.99</p>
-            <div class="rating mt-3">
+
+    <div class="container min-vh-100" id="product">
+      <h1 class="my-5 this">Today's Cake</h1>
+      <div class="row gap-3 gap-lg-0 m-2 m-lg-5">
+        <div class="col-md-4">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-1.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cheese Muffin</h5>
+              <p class="card-text">Price: $10.99</p>
+              <div class="rating mt-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
-            </div>
-            <div class="number-input">
-              <button class="minus-btn" type="button">-</button>
-              <input type="text" value="0" readonly>
-              <button class="plus-btn" type="button">+</button>
-            </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc" type="button">Add To Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-2.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 2">
-          <div class="card-body">
-            <h5 class="card-title">Chocolate Tiramisu</h5>
-            <p class="card-text">Price: $12.99</p>
-            <div class="rating mt-3">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="number-input">
-              <button class="minus-btn" type="button">-</button>
-              <input type="text" value="0" readonly>
-              <button class="plus-btn" type="button">+</button>
-            </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc"  type="button">Add To Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-3.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 3">
-          <div class="card-body">
-            <h5 class="card-title">Strawbery Choco Cake</h5>
-            <p class="card-text">Price: $9.99</p>
-            <div class="rating mt-3">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <div class="number-input">
+              </div>
+              <div class="number-input">
                 <button class="minus-btn" type="button">-</button>
-                <input type="text" value="0" readonly>
+                <input type="text" value="0" readonly />
                 <button class="plus-btn" type="button">+</button>
-            </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc" type="button">Add To Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mt-3">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-4.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
-          <div class="card-body">
-            <h5 class="card-title">Matcha Creepes</h5>
-            <p class="card-text">Price: $12.99</p>
-            <div class="rating mt-3">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <div class="number-input">
-              <button class="minus-btn" type="button">-</button>
-              <input type="text" value="0" readonly>
-              <button class="plus-btn" type="button">+</button>
-            </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc" type="button">Add To Cart</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 mt-3">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-5.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
-          <div class="card-body">
-            <h5 class="card-title">Choco Tart</h5>
-            <p class="card-text">Price: $20.99</p>
-            <div class="rating mt-3">
+        <div class="col-md-4">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-2.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Tiramisu</h5>
+              <p class="card-text">Price: $12.99</p>
+              <div class="rating mt-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <div class="number-input">
-              <button class="minus-btn" type="button">-</button>
-              <input type="text" value="0" readonly>
-              <button class="plus-btn" type="button">+</button>
-            </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc"  type="button">Add To Cart</button>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="number-input">
+                <button class="minus-btn" type="button">-</button>
+                <input type="text" value="0" readonly />
+                <button class="plus-btn" type="button">+</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 mt-3">
-        <div class="card shadow" data-aos="flip-right">
-          <img src="/asset/cake-6.jpg" class="card-img-top cake" style="height: 300px; object-fit: cover; padding: 10px;" alt="Cake 1">
-          <div class="card-body">
-            <h5 class="card-title">Black Forrest Grapes</h5>
-            <p class="card-text">Price: $11.99</p>
-            <div class="rating mt-3">
+        <div class="col-md-4">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-3.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Strawbery Choco Cake</h5>
+              <p class="card-text">Price: $9.99</p>
+              <div class="rating mt-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
+              </div>
+              <div class="number-input">
+                <button class="minus-btn" type="button">-</button>
+                <input type="text" value="0" readonly />
+                <button class="plus-btn" type="button">+</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
             </div>
-            <div class="number-input">
-              <button class="minus-btn" type="button">-</button>
-              <input type="text" value="0" readonly>
-              <button class="plus-btn" type="button">+</button>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-4.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Matcha Creepes</h5>
+              <p class="card-text">Price: $12.99</p>
+              <div class="rating mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="number-input">
+                <button class="minus-btn" type="button">-</button>
+                <input type="text" value="0" readonly />
+                <button class="plus-btn" type="button">+</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
             </div>
-            <div class="d-grid mt-3">
-                <button class="btn btn-primary py-2" id="atc" type="button">Add To Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-5.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Choco Tart</h5>
+              <p class="card-text">Price: $20.99</p>
+              <div class="rating mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="number-input">
+                <button class="minus-btn" type="button">-</button>
+                <input type="text" value="0" readonly />
+                <button class="plus-btn" type="button">+</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow" data-aos="flip-right">
+            <img
+              src="/asset/cake-6.jpg"
+              class="card-img-top cake"
+              style="height: 300px; object-fit: cover; padding: 10px"
+              alt="Cake 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Black Forrest Grapes</h5>
+              <p class="card-text">Price: $11.99</p>
+              <div class="rating mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="number-input">
+                <button class="minus-btn" type="button">-</button>
+                <input type="text" value="0" readonly />
+                <button class="plus-btn" type="button">+</button>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-primary py-2" id="atc" type="button">
+                  Add To Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="container -margin-left pl-5" data-aos="fade-right" data-aos-duration="1000">
-    <div class="-margin-left" style="width: 100%; height: 100%; background: #D9D9D9; border-radius: 6px">
-      <h2 class="subscribe">Subscribe to Our Newsletter to Get <br> Special Promotion Everyday!</h2>
-      <div class="d-flex flex-row p-3">
-        <input type="text" name="email" id="" class="subs-input" placeholder="example@gmail.com">
-        <button class="subs-button">→</button>
+    <div class="mx-3 my-4 row" data-aos="fade-right" data-aos-duration="1000" style="overflow-x: hidden;">
+      <div class="col-lg-9 pt-4 pb-3 px-5 bg-body-secondary rounded shadow-lg">
+        <h2 class="mb-4 fs-2 text-inria-sans fw-semibold">
+          Subscribe to Our Newsletter to Get Special Promotion Everyday!
+        </h2>
+        <div class="input-group mb-1">
+          <input
+            type="text"
+            class="form-control form-control-lg bg-light"
+            id="floatingInputGroup1"
+            placeholder="Example@gmail.com"
+            style="border-inline: none"
+          />
+          <button class="input-group-text bg-light">
+            <div class="px-1 bg-secondary rounded">
+              <i class="bi bi-arrow-right px-1" style="font-size: 25px;"></i>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer
-  class="text-center text-lg-start text-white"
-  style="background-color: #a47b58"
->
-  <div class="container p-4 pb-0">
-    <section>
-      <div class="row">
-        <div class="col-lg-3 col-lg-3 col-xl-5 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Bread & Co.</h6>
-          <p>
-            We Baked The Best Cake in The World. Experience the Flavors of
-            Handcrafted Breads. Bringing Joy and Deliciousness to Your Daily
-            Bread, Fresh From Oven
-          </p>
-        </div>
-        <div class="col-lg-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
-        <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
-        <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-          <p>
-            <i class="fas fa-home me-3 pb-2"></i> Banjarmasin, Kalimantan
-            Selatan
-          </p>
-          <p><i class="fas fa-envelope me-3"></i>Breadnco@gmail.com</p>
-          <p><i class="fas fa-phone me-3"></i> 081 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> 081 234 567 89</p>
-        </div>
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #a47b58"
+    >
+      <div class="container p-4 pb-0">
+        <section>
+          <div class="row">
+            <div class="col-lg-3 col-lg-3 col-xl-5 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Bread & Co.</h6>
+              <p>
+                We Baked The Best Cake in The World. Experience the Flavors of
+                Handcrafted Breads. Bringing Joy and Deliciousness to Your Daily
+                Bread, Fresh From Oven
+              </p>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-xl-1 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3"></div>
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home me-3 pb-2"></i> Banjarmasin, Kalimantan
+                Selatan
+              </p>
+              <p><i class="fas fa-envelope me-3"></i>Breadnco@gmail.com</p>
+              <p><i class="fas fa-phone me-3"></i> 081 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> 081 234 567 89</p>
+            </div>
+          </div>
+        </section>
+        <hr class="my-3" />
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="fs-5">© 2023 Copyright Bread & Co.</div>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <hr class="my-3" />
-    <section class="p-3 pt-0">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-7 col-lg-8 text-center text-md-start">
-          <div class="fs-5">© 2023 Copyright Bread & Co.</div>
-        </div>
-        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            class="text-white"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            class="text-white"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            class="text-white"
-            ><i class="fab fa-google"></i
-          ></a>
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            class="text-white"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-  </div>
-</footer>
-  </div>  
+    </footer>
 
-  <!-- aos -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const minusBtns = document.querySelectorAll(".minus-btn");
-      const plusBtns = document.querySelectorAll(".plus-btn");
-  
-      minusBtns.forEach(function(btn) {
-        btn.addEventListener("click", function() {
-          const input = btn.nextElementSibling;
-          let value = parseInt(input.value);
-  
-          if (value > 0) {
-            value--;
-            input.value = value;
-          }
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const minusBtns = document.querySelectorAll(".minus-btn");
+        const plusBtns = document.querySelectorAll(".plus-btn");
+
+        minusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.nextElementSibling;
+            let value = parseInt(input.value);
+
+            if (value > 0) {
+              value--;
+              input.value = value;
+            }
+          });
+        });
+
+        plusBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const input = btn.previousElementSibling;
+            let value = parseInt(input.value);
+
+            if (value < 10) {
+              value++;
+              input.value = value;
+            }
+          });
         });
       });
-  
-      plusBtns.forEach(function(btn) {
-        btn.addEventListener("click", function() {
-          const input = btn.previousElementSibling;
-          let value = parseInt(input.value);
-  
-          if (value < 10) {
-            value++;
-            input.value = value;
-          }
-        });
-      });
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/bootstrap-icons@1.7.2/font/bootstrap-icons.js"></script>
-</body>
-
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-icons@1.7.2/font/bootstrap-icons.js"></script>
+  </body>
 </html>
